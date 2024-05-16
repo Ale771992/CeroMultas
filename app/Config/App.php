@@ -6,6 +6,11 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
+    public $middleware = [
+        // Otros middlewares...
+        \App\Middleware\CORSMiddleware::class,
+    ];
+    
     /**
      * --------------------------------------------------------------------------
      * Base Site URL

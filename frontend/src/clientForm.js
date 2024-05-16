@@ -24,14 +24,14 @@ function ClientForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="nombre_contacto" placeholder="Nombre del contacto" onChange={handleChange} />
-            <input type="text" name="correo_electronico" placeholder="Correo electrónico" onChange={handleChange} />
-            <input type="text" name="nombre_empresa" placeholder="Nombre de la empresa" onChange={handleChange} />
-            <input type="text" name="logotipo" placeholder="Logotipo" onChange={handleChange} />
-            <input type="text" name="estado" placeholder="Estado" onChange={handleChange} />
-            <input type="text" name="descripcion_producto" placeholder="Descripción del producto" onChange={handleChange} />
-            <input type="date" name="fecha_registro" placeholder="Fecha de registro" onChange={handleChange} />
+        <form onSubmit={handleSubmit} className="space-y-4">
+            <input type="text" name="nombre_contacto" placeholder="Nombre del contacto" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md"/>
+            <input type="text" name="correo_electronico" placeholder="Correo electrónico" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md" />
+            <input type="text" name="nombre_empresa" placeholder="Nombre de la empresa" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md" />
+            <input type="text" name="logotipo" placeholder="Logotipo" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md"/>
+            <input type="text" name="estado" placeholder="Estado" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md"  />
+            <input type="text" name="descripcion_producto" placeholder="Descripción del producto" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md" />
+            <input type="date" name="fecha_registro" placeholder="Fecha de registro" onChange={handleChange} className="w-full p-2 border border-gray-300 rounded-md"  />
             <button type="submit">Enviar</button>
         </form>
     )
