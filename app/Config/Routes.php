@@ -7,5 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->post('apli/clients', 'ClientsController::create');
+$routes->post('api/clients', 'ClientController::create');
 
