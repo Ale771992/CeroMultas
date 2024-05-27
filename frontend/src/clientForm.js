@@ -15,7 +15,9 @@ function ClientForm() {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(client)
-        axios.post('http://localhost:8080/api/clients', client)
+        const formData = new FormData()
+        Object.keys(client).forEach(key => formData.append(key, client[key]))
+        axios.post('http://localhost:8080/api/clients', formData)
             .then(res => {
                 console.log(res.data)
             })

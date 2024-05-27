@@ -35,12 +35,12 @@ class Cors
      * }
      */
     private array $config = [
-        'allowedOrigins'         => [],
+        'allowedOrigins'         => ['*'],
         'allowedOriginsPatterns' => [],
-        'supportsCredentials'    => false,
-        'allowedHeaders'         => [],
+        'supportsCredentials'    => true,
+        'allowedHeaders'         => ['*'],
         'exposedHeaders'         => [],
-        'allowedMethods'         => [],
+        'allowedMethods'         => ['GET', 'POST', 'PUT', 'DELETE'],
         'maxAge'                 => 7200,
     ];
 

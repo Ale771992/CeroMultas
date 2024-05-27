@@ -12,7 +12,7 @@ class CORSMiddleware extends BaseMiddleware
     {
         // Headers para permitir solicitudes CORS desde http://localhost:3000
         $response = $next($request)
-            ->setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
+            ->setHeader('Access-Control-Allow-Origin', $allowedOrigins)
             ->setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
             ->setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
             ->setHeader('Access-Control-Allow-Credentials', 'true');

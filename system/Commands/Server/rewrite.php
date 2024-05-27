@@ -1,5 +1,5 @@
 <?php
-
+/**PHP's build-in development server. This file is used to mimic Apache's mod_rewrite functionality */
 declare(strict_types=1);
 
 /**
